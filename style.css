@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4em;
+    color:green;
+    animation:neon 5s infinite;
+}
+@keyframes neon{
+    0%,39%,41%,59%,61%,69%,71%,100%{
+        text-shadow: red 0 0 12px,green 0 0 24px,red 0 0 36px;
+    }
+    40%,60%,70%{
+        text-shadow: none;
+    }
+}
